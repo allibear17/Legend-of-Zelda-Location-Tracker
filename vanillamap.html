@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html><header><title>The Legend of Zelda Location Tracker by Alli_Cat</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts/main.js"></script>
+</header>
+<body class="body" onload="drawMarkers()">
+	<button onclick="showSection(0)" type="button" style= "background-color:#c84c0c">Overworld</button>
+	<button onclick="showSection(1)" type="button" style= "background-color:#008088">1 & 2</button>
+	<button onclick="showSection(2)" type="button" style= "background-color:#009038">3 & 4</button>
+	<button onclick="showSection(3)" type="button" style= "background-color:#00a800">5 & 6</button>
+	<button onclick="showSection(4)" type="button" style= "background-color:#005000">7 & 8</button>
+	<button onclick="showSection(5)" type="button" style= "background-color:#747474">Lv 9</button>
+	<input type="color" id="bgcolor" value="#666666" onchange="changeBG()">
+	
+	<div id="mapdisplay" class="map-container">
+		<p><span id="tt" class="tooltip">Tooltip Info</span></p>
+		<div id="overworld" class="base">
+			<img src="images/overworld.png">
+		</div>
+		<div id="onetwo" class="base">
+			<img src="images/onetwo.png">
+		</div>
+
+		<div id="threefour" class="base">
+			<img src="images/threefour.png">
+		</div>
+
+		<div id="fivesix" class="base">
+			<img src="images/fivesix.png">
+		</div>
+		
+		<div id="seveneight" class="base">
+			<img src="images/seveneight.png">
+		</div>
+
+		<div id="nine" class="base">
+			<img src="images/nine.png">
+		</div>
+	</div>
+</body>
+</html>
