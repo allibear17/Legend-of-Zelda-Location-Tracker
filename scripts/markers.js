@@ -10,8 +10,8 @@ function drawMarkers(){
 		markersOW[i].style.left = (( i % 16 ) * 45 ) + 10 + 'px';
 		markersOW[i].style.top = ( Math.trunc( i / 16 ) * 31 ) + 10 + 'px';
 		markersOW[i].onclick = toggleMarker;
-		markersOW[i].onmouseenter = showTooltip;
-		markersOW[i].onmouseleave = hideTooltip;
+		//markersOW[i].onmouseenter = showTooltip;
+		//markersOW[i].onmouseleave = hideTooltip;
 		place.appendChild(markersOW[i]);
 	}
 	
@@ -26,8 +26,8 @@ function drawMarkers(){
 		markersOneTwo[i].style.left = (( i % 12 ) * 60 ) + 10 + 'px';
 		markersOneTwo[i].style.top = ( Math.trunc( i / 12 ) * 41.2 ) + 10 + 'px';
 		markersOneTwo[i].onclick = toggleMarker;
-		markersOneTwo[i].onmouseenter = showTooltip;
-		markersOneTwo[i].onmouseleave = hideTooltip;
+		//markersOneTwo[i].onmouseenter = showTooltip;
+		//markersOneTwo[i].onmouseleave = hideTooltip;
 		place.appendChild(markersOneTwo[i]);
 		
 		// Lvs three and four
@@ -39,8 +39,8 @@ function drawMarkers(){
 		markersThreeFour[i].style.left = (( i % 12 ) * 60 ) + 10 + 'px';
 		markersThreeFour[i].style.top = ( Math.trunc( i / 12 ) * 41.2 ) + 10 + 'px';
 		markersThreeFour[i].onclick = toggleMarker;
-		markersThreeFour[i].onmouseenter = showTooltip;
-		markersThreeFour[i].onmouseleave = hideTooltip;
+		//markersThreeFour[i].onmouseenter = showTooltip;
+		//markersThreeFour[i].onmouseleave = hideTooltip;
 		place.appendChild(markersThreeFour[i]);
 		
 		// Lvs five and six
@@ -52,8 +52,8 @@ function drawMarkers(){
 		markersFiveSix[i].style.left = (( i % 12 ) * 60 ) + 10 + 'px';
 		markersFiveSix[i].style.top = ( Math.trunc( i / 12 ) * 41.2 ) + 10 + 'px';
 		markersFiveSix[i].onclick = toggleMarker;
-		markersFiveSix[i].onmouseenter = showTooltip;
-		markersFiveSix[i].onmouseleave = hideTooltip;
+		//markersFiveSix[i].onmouseenter = showTooltip;
+		//markersFiveSix[i].onmouseleave = hideTooltip;
 		place.appendChild(markersFiveSix[i]);
 		
 		// Lvs seven and eight
@@ -65,8 +65,8 @@ function drawMarkers(){
 		markersSevenEight[i].style.left = (( i % 12 ) * 60 ) + 10 + 'px';
 		markersSevenEight[i].style.top = ( Math.trunc( i / 12 ) * 41.2 ) + 10 + 'px';
 		markersSevenEight[i].onclick = toggleMarker;
-		markersSevenEight[i].onmouseenter = showTooltip;
-		markersSevenEight[i].onmouseleave = hideTooltip;
+		//markersSevenEight[i].onmouseenter = showTooltip;
+		//markersSevenEight[i].onmouseleave = hideTooltip;
 		place.appendChild(markersSevenEight[i]);
 	}
 	
@@ -80,8 +80,8 @@ function drawMarkers(){
 		markersNine[i].style.left = (( i % 8 ) * 60 ) + 10 + 'px';
 		markersNine[i].style.top = ( Math.trunc( i / 8 ) * 41.2 ) + 10 + 'px';
 		markersNine[i].onclick = toggleMarker;
-		markersNine[i].onmouseenter = showTooltip;
-		markersNine[i].onmouseleave = hideTooltip;
+		//markersNine[i].onmouseenter = showTooltip;
+		//markersNine[i].onmouseleave = hideTooltip;
 		place.appendChild(markersNine[i]);
 	}
 	
