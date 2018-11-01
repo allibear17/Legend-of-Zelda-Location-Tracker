@@ -30,7 +30,8 @@ button:active{
     border: none;
     padding: 0px 0px;
 	z-index: 2;
-	outline: rgba(0, 0, 0, 1) solid 1px;
+	outline: rgba(255, 255, 255, 1) solid 1px;
+	outline-offset: -1px;
 }
 .lvmarker{
 	position: absolute;
@@ -42,6 +43,7 @@ button:active{
     padding: 0px 0px;
 	z-index: 2;
 	outline: rgba(0, 0, 0, 1) solid 1px;
+	outline-offset: -1px;
 }
 .tooltip {
 	font-family: helvetica, arial, sans-serif;
