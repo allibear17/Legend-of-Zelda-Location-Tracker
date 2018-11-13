@@ -1,16 +1,11 @@
-var sectionShown = [false, false, false, false, false];
-
-var markersOW = [];
-var markersOneTwo = [];
-var markersThreeFour = [];
-var markersFiveSix = [];
-var markersSevenEight = [];
-var markersNine = [];
+var sectionShown = [];
+var markers = [];
 
 function justLoaded(){
 	hideAll();
 	drawMarkers();
 }
+
 function hideAll(){
 	for (i = 0; i < 6; i++){
 		sectionShown[i] = false;		
@@ -50,6 +45,14 @@ function showSection(m) {
 	}
 }
 
+function toggleOverlay(){
+	if ( overlay.style.display == "block" ){
+		overlay.style.display = "none";
+	} else {
+		overlay.style.display = "block";
+	}
+}
+
 function toggleMarker(event) {
     var clicked = document.getElementById(this.id);
 	if (clicked.getAttribute("src") == "images/marker1.png"){
@@ -61,17 +64,6 @@ function toggleMarker(event) {
 	else{
 		clicked.setAttribute("src", "images/marker1.png");
 	}
-}
-
-function makeMarked(target){
-	target.style.outline = "#000000 solid 0px";
-	target.setAttribute("src", "images/marker0.png");
-	target.setAttribute("onclick", "null");
-}
-
-function makeBlank(target){
-	target.style.outline = "#000000 solid 0px";
-	target.setAttribute("onclick", "null");
 }
 
 function showTooltip(event){
@@ -88,4 +80,21 @@ function hideTooltip(){
 }
 function changeBG(){
 	document.body.style.backgroundColor = document.getElementById("bgcolor").value;
+}
+
+function info(){
+	var id = document.getElementById("info")
+	if (id.style.display == "block"){
+		id.style.display = "none";
+	}
+	else {
+		id.style.display = "block";
+	}
+}
+
+function Location(x, y){
+	this.x = x;
+	this.y = y;
+	this.canReach = false;
+	this.elem = "";
 }
