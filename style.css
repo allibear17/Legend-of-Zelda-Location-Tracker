@@ -6,12 +6,12 @@ button {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 4px 20px;
+    padding: 4px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 4px 0px;
+    margin: 2px 0px;
     cursor: pointer;
 	outline: none;
 	border-radius: 10px;
@@ -66,6 +66,17 @@ button:active{
 	display: none;
 	z-index: 0;
 }
+.base2{
+	position: absolute;
+	text-align: right;
+	top: 20;
+	left: 200;
+	width: 600px;
+	padding-top: 0px;
+	padding-left: 0px;
+	display: none;
+	z-index: 3;
+}
 img{
 	max-width: 100%;
 	max-height: 100%;
@@ -76,4 +87,9 @@ img{
 	max-height: 480px;
 	padding-top: 10px;
 	padding-left: 10px;
+}
+a{
+	background-color: #ffffcc;
+	font-family: helvetica, arial, sans-serif;
+	color: #000000;
 }
