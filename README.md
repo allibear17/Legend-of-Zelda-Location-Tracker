@@ -44,6 +44,10 @@ Thanks to:
 
 Changelog
 
+Alpha 3.5a
+- Added some lines to show the segmented sections of 5-9.  Blue lines 
+are solid, green lines (just one in lv9) are one way doors.
+
 Alpha 3.5
 - Added two more marker types: Triforce, Magical Sword, Map, and Compass.
 - Changed the map for lv 3.  Added the staircase item room, so it can be 
