@@ -5,9 +5,7 @@ found at http://z1r.tetra.ly
 
 Current functionality is very basic.  Each map tab has a grid 
 corresponding to the screens seen in gameplay.  Clicking on one 
-piece of the grid, will toggle it's marker type.  Currently there 
-are only three useable marker types.  Possibly adding more in 
-the future.
+piece of the grid, will toggle it's marker type. 
 
 To the right of the Lv 9 button, is a color picker, to change 
 the background color. If you're using an addon to alter the css, 
