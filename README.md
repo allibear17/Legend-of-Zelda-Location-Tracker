@@ -28,8 +28,9 @@ enemy.  The item should be visible soon as you enter.
 - Staircase icons show that the room has an item inside a staircase 
 accessed from that room.
 - Letters (such as A) indicate stairway connections.
-- Note that lv 3 has a room with both a red circle and a staircase.  This 
-room has two items.  
+- Note that lv 3 is the only Lv that shows a staircase item room.  This is
+the staircase item and the floor item are able to be tracked separately. All
+other dungeons have a staircase marker instead.
 
 Have suggestions?  Please feel free to post them on the github page at:
 https://github.com/allibear17/Legend-of-Zelda-Location-Tracker/
