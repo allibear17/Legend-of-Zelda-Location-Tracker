@@ -41,9 +41,14 @@ Thanks to:
 - Tetraly (creating the open source z1 rando and tons of feedback)
 - z1 rando community (lots of great info helped make this)
 - Ian Albert for maps (http://ian-albert.com/games/legend_of_zelda_maps/)
-
+- Everyone who has been giving feedback.  It's been very helpful!
 
 Changelog
+
+Alpha 3.5
+- Added two more marker types: Triforce, Magical Sword, Map, and Compass.
+- Changed the map for lv 3.  Added the staircase item room, so it can be 
+	marked separately from the room that contains the staircase.
 
 Alpha 3
 - Added more map icons to overworld and dungeons.
