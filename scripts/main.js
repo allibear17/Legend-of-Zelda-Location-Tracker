@@ -1,5 +1,14 @@
 var sectionShown = [];
 var markers = [];
+var markerTypes = [
+	"images/marker0.png", 
+	"images/marker1.png", 
+	"images/marker2.png",
+	"images/marker3.png",
+	"images/marker4.png",
+	"images/marker5.png",
+	"images/marker6.png"
+];
 
 function justLoaded(){
 	hideAll();
@@ -55,14 +64,18 @@ function toggleOverlay(){
 
 function toggleMarker(event) {
     var clicked = document.getElementById(this.id);
-	if (clicked.getAttribute("src") == "images/marker1.png"){
-		clicked.setAttribute("src", "images/marker2.png");
+	var clickedSrc = clicked.getAttribute("src");
+	var type = 0;
+	for ( i = 0; i < markerTypes.length; i++){
+		if ( clickedSrc == markerTypes[i] ){
+			type = i+1;
+		}
 	}
-	else if(clicked.getAttribute("src") == "images/marker2.png"){
-		clicked.setAttribute("src", "images/marker3.png");
+	if ( markerTypes[type] ){
+		clicked.setAttribute("src", markerTypes[type]);
 	}
-	else{
-		clicked.setAttribute("src", "images/marker1.png");
+	else {
+		clicked.setAttribute("src", markerTypes[0]);
 	}
 }
 

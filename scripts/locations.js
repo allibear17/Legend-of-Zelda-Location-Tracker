@@ -94,6 +94,7 @@ markers = [
 	new Location(10, 216),
 	new Location(130, 216),
 	new Location(430, 216),
+	new Location(10, 257.2),
 	new Location(130, 257.2),
 	new Location(490, 257.2),
 	new Location(370, 298.4), // 97 End of lv 3 and 4
@@ -196,7 +197,7 @@ function drawMarkers(){
 	
 	for ( i = 0; i < markers.length; i++){
 		markers[i].elem = document.createElement("img");
-		markers[i].elem.setAttribute("src", "images/marker1.png");
+		markers[i].elem.setAttribute("src", "images/marker0.png");
 		markers[i].elem.id = "marker " + i;
 		markers[i].elem.style.left = markers[i].x + "px";
 		markers[i].elem.style.top = markers[i].y + "px";
@@ -208,13 +209,13 @@ function drawMarkers(){
 			markers[i].elem.setAttribute("class", "owmarker");
 		} else if (( i >= 52 ) && ( i <= 75 )){
 			ot.appendChild(markers[i].elem);
-		} else if (( i >= 76 ) && ( i <= 97)){
+		} else if (( i >= 76 ) && ( i <= 98)){
 			tf.appendChild(markers[i].elem);
-		} else if (( i >= 98 ) && ( i <= 124 )){
+		} else if (( i >= 99 ) && ( i <= 125 )){
 			fs.appendChild(markers[i].elem);
-		} else if (( i >= 125 ) && ( i <= 161 )){
+		} else if (( i >= 126 ) && ( i <= 162 )){
 			se.appendChild(markers[i].elem);
-		} else if ( i >= 162 ){
+		} else if ( i >= 163 ){
 			ni.appendChild(markers[i].elem);
 		}
 		if ( i > 51 ){
