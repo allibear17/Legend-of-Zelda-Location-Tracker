@@ -9,6 +9,7 @@ var markerTypes = [
 	"images/marker5.png",
 	"images/marker6.png"
 ];
+var lastClick;
 
 function justLoaded(){
 	hideAll();
@@ -25,6 +26,7 @@ function hideAll(){
 	fivesix.style.display = "none";
 	seveneight.style.display = "none";
 	nine.style.display = "none";
+	shopDropdown.style.display = "none";
 }
 
 function showSection(m) {
@@ -66,6 +68,7 @@ function toggleMarker(event) {
     var clicked = document.getElementById(this.id);
 	var clickedSrc = clicked.getAttribute("src");
 	var type = 0;
+	
 	for ( i = 0; i < markerTypes.length; i++){
 		if ( clickedSrc == markerTypes[i] ){
 			type = i+1;
@@ -93,6 +96,7 @@ function hideTooltip(){
 }
 function changeBG(){
 	document.body.style.backgroundColor = document.getElementById("bgcolor").value;
+	document.getElementById("shopDropdown").style.backgroundColor = document.getElementById("bgcolor").value;
 }
 
 function info(){
@@ -111,3 +115,42 @@ function Location(x, y){
 	this.canReach = false;
 	this.elem = "";
 }
+
+function toggleShop(){
+	var id = document.getElementById("shopDropdown");
+    if ( id.style.display == "block"){
+		id.style.display = "none";
+	} else {
+		id.style.display = "block";
+	}
+	lastClick = event.target;
+	id.style.top = event.clientY - 160 + "px";	
+	id.style.left = event.clientX + "px";	
+}
+
+function shopItemClick(){
+	var idSrc = event.target.getAttribute("src");
+	lastClick.setAttribute("src", idSrc);
+	toggleShop();
+}
+
+addEventListener('contextmenu', function(e) {
+	e.preventDefault();
+	if (( e.target.className == "owmarker" ) || ( e.target.className == "lvmarker" )){
+		var clicked = document.getElementById(e.target.id);
+		var clickedSrc = clicked.getAttribute("src");
+		var type = 0;
+	
+		for ( i = 0; i < markerTypes.length; i++){
+			if ( clickedSrc == markerTypes[i] ){
+				type = i-1;
+			}
+		}
+		if ( type >= 0 ){
+			clicked.setAttribute("src", markerTypes[type]);
+		}
+		else {
+			clicked.setAttribute("src", markerTypes[6]);
+		}
+	}
+});

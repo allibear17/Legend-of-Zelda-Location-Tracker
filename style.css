@@ -3,16 +3,16 @@ body {
 }
 button {
 	font-family: helvetica, arial, sans-serif;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 4px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 2px 0px;
-    cursor: pointer;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 4px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 2px 0px;
+	cursor: pointer;
 	outline: none;
 	border-radius: 10px;
 	box-shadow: 0 2px #999;
@@ -43,7 +43,7 @@ button:active{
     padding: 0px 0px;
 	z-index: 2;
 	outline: rgba(0, 0, 0, 1) solid 1px;
-	outline-offset: -1px;
+	outline-offset: -1.5px;
 }
 .tooltip {
 	font-family: helvetica, arial, sans-serif;
@@ -92,4 +92,41 @@ a{
 	background-color: #ffffcc;
 	font-family: helvetica, arial, sans-serif;
 	color: #000000;
+}
+.shop-dropdown{
+	display: none;
+	background-color: #666666;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 210px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+	padding-top: 4px;
+	padding-left: 4px;
+	border: 2px solid black;
+	z-index: 4;
+}
+.shop-item{
+	width: 25px;
+	height: 25px;
+	padding: 2px 2px 2px 2px;
+	background-color: #444444;
+	border: 1px solid black;
+}
+
+.in-shop{
+	background-color: rgba(0,0,0,0);
+	border: none;
+	padding: 0px 0px;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0px #999;
+	z-index: 4;
+}
+.in-shop:active{
+	box-shadow: 0 0px #999;
+	transform: translateY(2px);
 }
