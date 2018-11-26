@@ -49,6 +49,9 @@ Thanks to:
 
 Changelog
 
+Beta 1
+- Added item tracking for progression items.
+
 Alpha 4
 - Changed the icons used for shops in the overlay.
 - Added Shop trackers, with popup item lists.
