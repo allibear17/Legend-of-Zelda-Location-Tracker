@@ -135,6 +135,18 @@ function shopItemClick(){
 	toggleShop();
 }
 
+function toggleItem(){
+	id = this.event.target;
+	console.log(id.style.opacity);
+	if ( id.style.opacity == 1.0 ){
+		id.style.opacity = 0.3;
+		id.style.outline = "rgba(0, 0, 0, 0) solid 1px";
+	} else {
+		id.style.opacity = 1.0;
+		id.style.outline = "rgba(0, 0, 0, 0.15) solid 2px";
+	}
+}
+
 addEventListener('contextmenu', function(e) {
 	e.preventDefault();
 	if (( e.target.className == "owmarker" ) || ( e.target.className == "lvmarker" )){
