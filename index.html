@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html lang="en">
 <html><header><title>The Legend of Zelda Location Tracker Starisms</title>
 	<link rel="stylesheet" href="style.css">
@@ -20,22 +21,22 @@
 	</div>
 	
 	<table id="items"><tr>
-	<td><img id="tri1" class="item" src="sprites/triforce1.png" onClick="toggleItem()"></td>
-	<td><img id="tri2" class="item" src="sprites/triforce2.png" onClick="toggleItem()"></td>
-	<td><img id="tri3" class="item" src="sprites/triforce3.png" onClick="toggleItem()"></td>
-	<td><img id="tri4" class="item" src="sprites/triforce4.png" onClick="toggleItem()"></td>
-	<td><img id="tri5" class="item" src="sprites/triforce5.png" onClick="toggleItem()"></td>
-	<td><img id="tri6" class="item" src="sprites/triforce6.png" onClick="toggleItem()"></td>
-	<td><img id="tri7" class="item" src="sprites/triforce7.png" onClick="toggleItem()"></td>
-	<td><img id="tri8" class="item" src="sprites/triforce8.png" onClick="toggleItem()"></td>
-	<td><img id="silvers" class="item" src="sprites/arrow2.png" onClick="toggleItem()"></td>
-	<td><img id="bow" class="item" src="sprites/bow.png" onClick="toggleItem()"></td>
-	<td><img id="ladder" class="item" src="sprites/ladder.png" onClick="toggleItem()"></td>
-	<td><img id="raft" class="item" src="sprites/raft.png" onClick="toggleItem()"></td>
-	<td><img id="anykey" class="item" src="sprites/anykey.png" onClick="toggleItem()"></td>
-	<td><img id="candle" class="item" src="sprites/candle1.png" onClick="toggleItem()"></td>
-	<td><img id="whistle" class="item" src="sprites/whistle.png" onClick="toggleItem()"></td>
-	<td><img id="bait" class="item" src="sprites/bait.png" onClick="toggleItem()"></td>
+	<td><img id="tri1" class="item" src="sprites/triforce1.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri2" class="item" src="sprites/triforce2.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri3" class="item" src="sprites/triforce3.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri4" class="item" src="sprites/triforce4.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri5" class="item" src="sprites/triforce5.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri6" class="item" src="sprites/triforce6.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri7" class="item" src="sprites/triforce7.png" onClick="toggleItem(event)"></td>
+	<td><img id="tri8" class="item" src="sprites/triforce8.png" onClick="toggleItem(event)"></td>
+	<td><img id="silvers" class="item" src="sprites/arrow2.png" onClick="toggleItem(event)"></td>
+	<td><img id="bow" class="item" src="sprites/bow.png" onClick="toggleItem(event)"></td>
+	<td><img id="ladder" class="item" src="sprites/ladder.png" onClick="toggleItem(event)"></td>
+	<td><img id="raft" class="item" src="sprites/raft.png" onClick="toggleItem(event)"></td>
+	<td><img id="anykey" class="item" src="sprites/anykey.png" onClick="toggleItem(event)"></td>
+	<td><img id="candle" class="item" src="sprites/candle1.png" onClick="toggleItem(event)"></td>
+	<td><img id="whistle" class="item" src="sprites/whistle.png" onClick="toggleItem(event)"></td>
+	<td><img id="bait" class="item" src="sprites/bait.png" onClick="toggleItem(event)"></td>
 	</tr></table>
 	
 	<div id="mapdisplay" class="map-container">
@@ -48,69 +49,45 @@
 			</div>
 			
 			<div id="shopDropdown" class="shop-dropdown">
-				<img id="shopitem1" class="shop-item" src="sprites/anykey.png" onClick="shopItemClick()">
-				<img id="shopitem2" class="shop-item" src="sprites/arrow1.png" onClick="shopItemClick()">
-				<img id="shopitem3" class="shop-item" src="sprites/bait.png" onClick="shopItemClick()">
-				<img id="shopitem4" class="shop-item" src="sprites/bombs.png" onClick="shopItemClick()">
-				<img id="shopitem5" class="shop-item" src="sprites/bow.png" onClick="shopItemClick()">
-				<img id="shopitem6" class="shop-item" src="sprites/candle1.png" onClick="shopItemClick()">
-				<img id="shopitem7" class="shop-item" src="sprites/key.png" onClick="shopItemClick()">
-				<img id="shopitem8" class="shop-item" src="sprites/ladder.png" onClick="shopItemClick()">
-				<img id="shopitem9" class="shop-item" src="sprites/letter.png" onClick="shopItemClick()">
-				<img id="shopitem10" class="shop-item" src="sprites/magicbook.png" onClick="shopItemClick()">
-				<img id="shopitem11" class="shop-item" src="sprites/magicshield.png" onClick="shopItemClick()">
-				<img id="shopitem12" class="shop-item" src="sprites/pbracelet.png" onClick="shopItemClick()">
-				<img id="shopitem13" class="shop-item" src="sprites/raft.png" onClick="shopItemClick()">
-				<img id="shopitem14" class="shop-item" src="sprites/ring1.png" onClick="shopItemClick()">
-				<img id="shopitem15" class="shop-item" src="sprites/sword2.png" onClick="shopItemClick()">
-				<img id="shopitem16" class="shop-item" src="sprites/wand.png" onClick="shopItemClick()">
-				<img id="shopitem17" class="shop-item" src="sprites/whistle.png" onClick="shopItemClick()">
-				<img id="shopitem18" class="shop-item" src="sprites/heart.png" onClick="shopItemClick()">
+				<img id="shopitem1" class="shop-item" src="sprites/anykey.png" onClick="shopItemClick(event)">
+				<img id="shopitem2" class="shop-item" src="sprites/arrow1.png" onClick="shopItemClick(event)">
+				<img id="shopitem3" class="shop-item" src="sprites/bait.png" onClick="shopItemClick(event)">
+				<img id="shopitem4" class="shop-item" src="sprites/bombs.png" onClick="shopItemClick(event)">
+				<img id="shopitem5" class="shop-item" src="sprites/bow.png" onClick="shopItemClick(event)">
+				<img id="shopitem6" class="shop-item" src="sprites/candle1.png" onClick="shopItemClick(event)">
+				<img id="shopitem7" class="shop-item" src="sprites/key.png" onClick="shopItemClick(event)">
+				<img id="shopitem8" class="shop-item" src="sprites/ladder.png" onClick="shopItemClick(event)">
+				<img id="shopitem9" class="shop-item" src="sprites/letter.png" onClick="shopItemClick(event)">
+				<img id="shopitem10" class="shop-item" src="sprites/magicbook.png" onClick="shopItemClick(event)">
+				<img id="shopitem11" class="shop-item" src="sprites/magicshield.png" onClick="shopItemClick(event)">
+				<img id="shopitem12" class="shop-item" src="sprites/pbracelet.png" onClick="shopItemClick(event)">
+				<img id="shopitem13" class="shop-item" src="sprites/raft.png" onClick="shopItemClick(event)">
+				<img id="shopitem14" class="shop-item" src="sprites/ring1.png" onClick="shopItemClick(event)">
+				<img id="shopitem15" class="shop-item" src="sprites/sword2.png" onClick="shopItemClick(event)">
+				<img id="shopitem16" class="shop-item" src="sprites/wand.png" onClick="shopItemClick(event)">
+				<img id="shopitem17" class="shop-item" src="sprites/whistle.png" onClick="shopItemClick(event)">
+				<img id="shopitem18" class="shop-item" src="sprites/heart.png" onClick="shopItemClick(event)">
 			</div>
 
 			<img id="shopguy1" class="shop-merchant" src="sprites/merchant1.png">
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow1" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow2" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()" style="padding-right:20px;">
-				<img id="shopshow3" src="sprites/blank.png" class="shop-item">
-			</button>
+			<img id="shopshow1" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow2" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow3" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
 
 			<img id="shopguy2" class="shop-merchant" src="sprites/merchant2.png">
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow4" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow5" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()" style="padding-right:20px;">
-				<img id="shopshow6" src="sprites/blank.png" class="shop-item">
-			</button>
+			<img id="shopshow4" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow5" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow6" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
 
 			<img id="shopguy3" class="shop-merchant" src="sprites/merchant3.png">
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow7" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow8" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()" style="padding-right:20px;">
-				<img id="shopshow9" src="sprites/blank.png" class="shop-item">
-			</button>
+			<img id="shopshow7" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow8" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow9" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
 
 			<img id="shopguy4" class="shop-merchant" src="sprites/merchant4.png">
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow10" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow11" src="sprites/blank.png" class="shop-item">
-			</button>
-			<button class="in-shop" onClick="toggleShop()">
-				<img id="shopshow12" src="sprites/blank.png" class="shop-item">
-			</button>
+			<img id="shopshow10" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow11" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
+			<img id="shopshow12" onClick="toggleShop(event)" src="sprites/blank.png" class="shop-item">
 		</div>
 
 		<div id="onetwo" class="base">
