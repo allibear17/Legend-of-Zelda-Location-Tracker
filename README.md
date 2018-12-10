@@ -49,6 +49,9 @@ Thanks to:
 
 Changelog
 
+Beta 1.3
+- Altered greyscale filters to item tracking, for improved visiblity.
+
 Beta 1.2
 - Fixed issues with Firefox, tracker should work properly again.
 
