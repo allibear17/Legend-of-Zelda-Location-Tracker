@@ -138,11 +138,11 @@ function shopItemClick(e){
 function toggleItem(e){
 	id = e.target;
 	if ( id.style.opacity == 1.0 ){
-		id.style.opacity = 0.3;
-		id.style.outline = "rgba(0, 0, 0, 0) solid 1px";
+		id.style.opacity = 0.5;
+		id.style.filter = "grayscale(100%)";
 	} else {
 		id.style.opacity = 1.0;
-		id.style.outline = "rgba(0, 0, 0, 0.15) solid 2px";
+		id.style.filter = "none";
 	}
 }
 
