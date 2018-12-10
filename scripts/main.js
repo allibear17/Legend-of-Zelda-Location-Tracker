@@ -117,27 +117,26 @@ function Location(x, y){
 	this.elem = "";
 }
 
-function toggleShop(){
+function toggleShop(e){
 	var id = document.getElementById("shopDropdown");
     if ( id.style.display == "block"){
 		id.style.display = "none";
 	} else {
 		id.style.display = "block";
 	}
-	lastClick = event.target;
-	id.style.top = event.clientY - 160 + "px";	
-	id.style.left = event.clientX + "px";	
+	lastClick = e.target;
+	id.style.top = e.clientY - 210 + "px";	
+	id.style.left = e.clientX + "px";
 }
 
-function shopItemClick(){
-	var idSrc = event.target.getAttribute("src");
+function shopItemClick(e){
+	var idSrc = e.target.getAttribute("src");
 	lastClick.setAttribute("src", idSrc);
-	toggleShop();
+	toggleShop(e);
 }
 
-function toggleItem(){
-	id = this.event.target;
-	console.log(id.style.opacity);
+function toggleItem(e){
+	id = e.target;
 	if ( id.style.opacity == 1.0 ){
 		id.style.opacity = 0.3;
 		id.style.outline = "rgba(0, 0, 0, 0) solid 1px";
