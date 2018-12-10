@@ -131,7 +131,8 @@ a{
 	position: relative;
 	width: 30px;
 	height: 30px;
-	opacity: 0.3;
+	opacity: 0.5;
+	filter: grayscale(100%);
 }
 table{
 	position: relative;
