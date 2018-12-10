@@ -49,6 +49,9 @@ Thanks to:
 
 Changelog
 
+Beta 1.2
+- Fixed issues with Firefox, tracker should work properly again.
+
 Beta 1
 - Added item tracking for progression items.
 
