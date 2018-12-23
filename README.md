@@ -14,6 +14,7 @@ it may have minor conflicts with this color picker.
 
 The button "OW+" toggles an overlay on the oeverworld.  This overlay
 chas many icons showing what the locations contain:
+- Triforces with numbers to show dungeon locations
 - Bombs for bomb spots
 - Fires for burn bush locations
 - Potions for potion shops
