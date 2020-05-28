@@ -1,4 +1,5 @@
 # Legend-of-Zelda-Location-Tracker
+https://allibear17.github.io/Legend-of-Zelda-Location-Tracker/
 
 This z1 tracker is designed for the open source z1 randomizer
 found at http://z1r.tetra.ly
